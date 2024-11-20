@@ -1,0 +1,31 @@
+@import "./Variables.scss";
+
+.head__conteiner{
+    display: flex;
+    background: #F1F3F7;
+    width: 100%;
+    height: 31px;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+.head__search{
+    display: flex;
+    width: 163px;
+    height: 24px;
+    background: linear-gradient(90deg, rgba(51,255,33,0.33) 0%, rgba(59,192,138,0.33) 100%);
+    border-radius: 5px;
+    margin: 0 4px 0 4px;
+    align-items: center;
+    justify-content: center;
+}
+.head__search_2{
+    display: flex;
+    min-width: 161px;
+    height: 22px;
+    background-color: white;
+    border-radius: 5px;
+}
+.head__Lupa{
+    display: flex;
+}
