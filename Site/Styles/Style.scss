@@ -1,31 +1,255 @@
 @import "./Variables.scss";
 
-.head__conteiner{
-    display: flex;
-    background: #F1F3F7;
-    width: 100%;
-    height: 31px;
-    align-items: center;
-    justify-content: flex-end;
-    
+.head__conteiner {
+  display: flex;
+  background: #f1f3f7;
+  width: 100%;
+  height: 31px;
+  align-items: center;
+  justify-content: flex-end;
 }
-.head__search{
-    display: flex;
-    width: 163px;
-    height: 24px;
-    background: linear-gradient(90deg, rgba(51,255,33,0.33) 0%, rgba(59,192,138,0.33) 100%);
-    border-radius: 5px;
-    margin: 0 4px 0 4px;
-    align-items: center;
-    justify-content: center;
+.head__search {
+  display: flex;
+  width: 163px;
+  height: 24px;
+  background: linear-gradient(
+    90deg,
+    rgba(51, 255, 33, 0.33) 0%,
+    rgba(59, 192, 138, 0.33) 100%
+  );
+  border-radius: 5px;
+  margin: 0 4px 0 4px;
+  align-items: center;
+  justify-content: center;
 }
-.head__search_2{
-    display: flex;
-    min-width: 161px;
-    height: 22px;
-    background-color: white;
-    border-radius: 5px;
+.head__search_2 {
+  display: flex;
+  min-width: 161px;
+  height: 22px;
+  background-color: white;
+  border-radius: 5px;
 }
-.head__Lupa{
-    display: flex;
+.head__Lupa {
+  display: flex;
+}
+.header {
+  background: white;
+  display: flex;
+  width: 100%;
+  height: 45px;
+  box-shadow: 0px 0px 15px 0px rgba(34, 60, 80, 0.2);
+}
+.header__rectangle {
+  background: white;
+  display: flex;
+  width: 100%;
+  height: 42px;
+  box-shadow: 0px 0px 15px 0px rgba(34, 60, 80, 0.2);
+  justify-content: space-between;
+  align-items: center;
+}
+.header__logo {
+  display: flex;
+  margin-left: 11px;
+}
+.header__account--conteiner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Abel";
+  color: #006fff;
+  font-size: 14px;
+}
+.header__account--button {
+  background: white;
+  border: none;
+  justify-content: center;
+  align-items: center;
+}
+.header__account {
+  background: white;
+  border: none;
+  justify-content: center;
+  align-items: center;
+  font-family: "Abel";
+  color: #006fff;
+}
+.header__zapis--conteiner {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  height: 59px;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 11px 15px -2px rgba(34, 60, 80, 0.2);
+  font-size: 10px;
+  font-family: "Abel";
+  color: #00A3FF;
+}
+.header__online_appointment {
+  width: 124px;
+  height: 29px;
+  border: none;
+  border-radius: 17px;
+  background: linear-gradient(180deg, rgb(12, 102, 156), rgb(59, 194, 145));
+  font-family: "Abel";
+  font-size: 10px;
+  color: white;
+  margin-left: 10px;
+}
+.header__img--logos{
+    width: 32px;
+    height: 32px;
+}
+.header__socnet{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Abel";
+  font-size: 10px;
+  width: 160px;
+  margin: 0 10px 0 0;
+}
+.Doctor-info{
+  margin-top: 48px;
+  display: flex;
+  width: 100%;
+  height: 467px;
+  background-color: #F1F8FF;
+}
+.Online-appointment{
+  background: linear-gradient(180deg, rgb(12, 70, 156), rgb(59, 194, 121));
+  width: 100%;
+  height: 535px;
+}
+.Online-appointment--text{
+  padding: 31px 0 0 19px;
+  color: white;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 29px;
+}
+.Online-appointment--text1{
+  font-size: 24px;
+}
+.Make_an_appointment{
+background-color: white;
+display: flex;
+width: 293px;
+height: 192px;
+margin-left: 19px;
+border-radius: 20px;
+justify-content: center;
+align-items: center;
+}
+.Make_an_appointment--rectangle{
+background-color: white;
+display: flex;
+width: 273px;
+height: 180px;
+border-radius: 20px;
+box-shadow: 0px 2px 10px 0px rgba(78, 127, 222, 0.2);
+}
+.Make_an_appointment--form{
+  list-style: none;
+}
+.forma{
+  margin: 8px 0 0 19px;
+}
+.Appointment{
+  color: #1B1D32;
+  font-size: 16px;
+}
+.name_and_phone{
+  display: flex;
+  justify-content: space-between;
+  width: 234px;
+  height: auto;
+  margin-top: 12px;
+}
+.name{
+  color: #7E83AE;
+  font-size: 10px;
+  border-radius: 6px;
+  display: flex;
+  width: 112px;
+  height: 24px;
+  background:rgba($color: #C9D2EA, $alpha: 0.1);
+  align-items: center;
+  padding-left: 9px;
+  box-shadow: 0px 4px 4px 0px rgba(201, 210, 234, 0.29) inset;
+}
+.Phone{
+  color: #7E83AE;
+  font-size: 10px;
+  border-radius: 6px;
+  margin: 0 0 0 10px;
+  display: flex;
+  width: 112px;
+  height: 24px;
+  background:rgba($color: #C9D2EA, $alpha: 0.1);
+  align-items: center;
+  padding-left: 9px;
+  box-shadow: 0px 4px 4px 0px rgba(201, 210, 234, 0.29) inset;
+}
+
+.service{
+  color: #7E83AE;
+  font-size: 10px;
+  border-radius: 6px;
+  display: flex;
+  width: 227px;
+  margin-top: 12px;
+  height: 24px;
+  background:rgba($color: #C9D2EA, $alpha: 0.1);
+  align-items: center;
+  padding-left: 9px;
+  box-shadow: 0px 4px 4px 0px rgba(201, 210, 234, 0.29) inset;
+}
+.data_and_button{
+  font-size: 10px;
+  display: flex;
+  justify-content: space-between;
+  width: 234px;
+  height: auto;
+  margin-top: 12px;
+}
+.date{
+  color: #7E83AE;
+  border-radius: 6px;
+  display: flex;
+  width: 103px;
+  max-width: 112px;
+  height: 24px;
+  background:rgba($color: #C9D2EA, $alpha: 0.1);
+  align-items: center;
+  padding-left: 9px;
+  box-shadow: 0px 4px 4px 0px rgba(201, 210, 234, 0.29) inset;
+}
+.button--sign_up{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 10px;
+  font-family: "Abhaya Libre";
+  width: 113px;
+  height: 24px;
+  border: none;
+  border-radius: 17px;
+  color: white;
+  background: linear-gradient(90deg, rgb(12, 102, 156), rgb(59, 186, 194));
+  box-shadow: 0px 8px 10px 0px rgba(2, 142, 206, 0.32);
+}
+.data_and_button{
+  display: flex;
+  justify-content: space-between;
+  width: 234px;
+  height: auto;
+  
+}
+.Agreement{
+  color: #7E83AE;
+  font-size: 7px;
+  margin-top: 11px;
 }
