@@ -253,3 +253,118 @@ box-shadow: 0px 2px 10px 0px rgba(78, 127, 222, 0.2);
   font-size: 7px;
   margin-top: 11px;
 }
+.retings{
+  font-size: 30px;
+  font-family: "Abhaya Libre";
+  display: flex;
+  flex-direction: column;
+  row-gap: 14px;
+  margin-top: 45px;
+  width: 100%;
+  height: 425px;
+  align-items: center;
+  justify-content: center;
+}
+.retings__text{
+  padding: 0 0 20px 0 ;
+}
+.basement{
+  width: 100%;
+  height: 279px;
+  background: linear-gradient(180deg, rgb(59, 125, 185), rgb(20, 108, 98));
+}
+.basement__text--all{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  padding: 0%;
+}
+.basement__text{
+  display: flex;
+  color: white;
+  flex-direction: column;
+  row-gap: 15px;
+  font-size: 15px;
+  font-family: "Abel";
+  list-style: none;
+  padding: 0%;
+  padding-top: 15px;
+  padding-left: 23px;
+}
+.basement__text2{
+  display: flex;
+  color: white;
+  flex-direction: column;
+  row-gap: 15px;
+  font-size: 15px;
+  font-family: "Abel";
+  list-style: none;
+  padding: 0%;
+  padding-top: 15px;
+  padding-left: 20px;
+}
+.basement__info{
+  display: flex;
+  color: white;
+  flex-direction: row;
+  row-gap: 15px;
+  font-size: 15px;
+  font-family: "Abel";
+  list-style: none;
+  padding: 0%;
+  padding-left: 11px;
+  padding-top: 3px;
+  line-height: 24px;
+}
+.basement__info2{
+  display: flex;
+  color: white;
+  flex-direction: row;
+  row-gap: 15px;
+  font-size: 15px;
+  font-family: "Abel";
+  list-style: none;
+  padding: 0%;
+  padding-left: 20px;
+  padding-top: 15px;
+}
+.basement__bottom{
+  display: flex;
+  width: 100%;
+  height: 25px;
+  color: rgba($color: #fff, $alpha: 0.26);
+  flex-direction: row;
+  padding: 0;
+  margin: 0%;
+  z-index: 0;
+
+}
+.basement__bottom--list{
+  display: flex;
+  width: 100%;
+  height: 25px;
+  flex-direction: row;
+  padding: 0;
+  margin: 0%;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.basement__bottom--text-1{
+  display: flex;
+  list-style: none;
+  color: rgba($color: #fff, $alpha: 0.7);
+  font-size: 12px;
+  height: auto;
+  margin: 0 15px 0 5px;
+}
+.basement__bottom--text-2{
+  display: flex;
+  list-style: none;
+  color: rgba($color: #fff, $alpha: 1);
+  font-size: 11px;
+  height: auto;
+  text-decoration: underline;
+  margin: 0 5px 0 5px;
+}
