@@ -1,5 +1,7 @@
 @import "./Variables.scss";
 
+@import "./Slider.scss";
+
 .head__conteiner {
   display: flex;
   background: #f1f3f7;
@@ -110,8 +112,8 @@
   width: 160px;
   margin: 0 10px 0 0;
 }
+
 .Doctor-info{
-  margin-top: 48px;
   display: flex;
   width: 100%;
   height: 467px;
@@ -129,6 +131,7 @@
   display: flex;
   flex-direction: column;
   row-gap: 29px;
+  margin-top: 0;
 }
 .Online-appointment--text1{
   font-size: 24px;
@@ -333,12 +336,10 @@ box-shadow: 0px 2px 10px 0px rgba(78, 127, 222, 0.2);
   display: flex;
   width: 100%;
   height: 25px;
-  color: rgba($color: #fff, $alpha: 0.26);
+  background-color: rgba($color: #1B1D32, $alpha: 0.26);
   flex-direction: row;
   padding: 0;
   margin: 0%;
-  z-index: 0;
-
 }
 .basement__bottom--list{
   display: flex;

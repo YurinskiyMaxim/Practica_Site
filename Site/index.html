@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="Styles/Style.scss">
     <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Practica site</title>
   </head>
@@ -27,7 +28,92 @@
         </div>
       </div>
     </div>
-    <div>
+      <div class="main__menu--slider">
+        <div class="main__menu--slider--item">
+          <input
+            class="main__menu--slider-radio-button"
+            type="radio"
+            id="radio_brands"
+            name="selector"
+            checked
+          />
+          <label for="radio_brands" class="main__menu--slider--item-label">
+            <p>О клинике</p>
+          </label>
+        </div>
+        <div class="main__menu--slider--item">
+          <input
+            class="main__menu--slider-radio-button"
+            type="radio"
+            id="radio_brands"
+            name="selector"
+            checked
+          />
+          <label for="radio_brands" class="main__menu--slider--item-label">
+            <p>Услуги</p>
+          </label>
+        </div>
+        <div class="main__menu--slider--item">
+          <input
+            class="main__menu--slider-radio-button"
+            type="radio"
+            id="radio_brands"
+            name="selector"
+            checked
+          />
+          <label for="radio_brands" class="main__menu--slider--item-label">
+            <p>Врачи</p>
+          </label>
+        </div>
+        <div class="main__menu--slider--item">
+          <input
+            class="main__menu--slider-radio-button"
+            type="radio"
+            id="radio_brands"
+            name="selector"
+            checked
+          />
+          <label for="radio_brands" class="main__menu--slider--item-label">
+            <p>Цены</p>
+          </label>
+        </div>
+        <div class="main__menu--slider--item">
+          <input
+            class="main__menu--slider-radio-button"
+            type="radio"
+            id="radio_brands"
+            name="selector"
+            checked
+          />
+          <label for="radio_brands" class="main__menu--slider--item-label">
+            <p>Отзывы</p>
+          </label>
+        </div>
+        <div class="main__menu--slider--item">
+          <input
+            class="main__menu--slider-radio-button"
+            type="radio"
+            id="radio_brands"
+            name="selector"
+            checked
+          />
+          <label for="radio_brands" class="main__menu--slider--item-label">
+            <p>Вопросы и ответы</p>
+          </label>
+        </div>
+        <div class="main__menu--slider--item">
+          <input
+            class="main__menu--slider-radio-button"
+            type="radio"
+            id="radio_brands"
+            name="selector"
+            checked
+          />
+          <label for="radio_brands" class="main__menu--slider--item-label">
+            <p>Контакты</p>
+          </label>
+        </div>
+      </div>
       <div class="Doctor-info">
         <div class="Swiper__doctor-info"></div>
         <div class="doctors-car"></div>
@@ -101,6 +187,10 @@
         </div>
       </div>
     </div>
-  </div>
+  </div >
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {});
+  </script>
 </html>
