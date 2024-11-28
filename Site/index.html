@@ -2,9 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="Styles/Style.scss">
+    <link rel="stylesheet" href="./Styles/Style.scss">
     <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./Styles/Swiper.scss">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Practica site</title>
   </head>
@@ -38,7 +39,7 @@
             <li><button class="context_menu--button"><img class="context_menu--img" src="./imgs/ЛичныйКаб.png" alt=""> Личный кабинет</button> </li>
             <li class="context_menu--element"><img class="context_menu--img" src="./imgs/Список.png" alt=""> Список заявок</li>
             <li><button class="context_menu--button"><img class="context_menu--img" src="./imgs/Поддержка.png" alt=""> Служба поддержки</button></li>
-            <li class="context_menu_exit"><img class="context_menu--img" src="./imgs/Выход.png" alt=""> Выйти из аккаунта</li>
+            <button class="context_menu_exit"><img class="context_menu--img" src="./imgs/Выход.png" alt=""> Выйти из аккаунта</button>
           </ul>
         </div>
         <div class="header__logo"> <img src="./imgs/Logo.svg" alt="Logo"></div>
@@ -141,10 +142,17 @@
           </label>
         </div>
       </div>
-      <div class="Doctor-info">
-        <div class="Swiper__doctor-info"></div>
-        <div class="doctors-car"></div>
-      </div>
+      <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">Slide 1</div>
+      <div class="swiper-slide">Slide 2</div>
+      <div class="swiper-slide">Slide 3</div>
+      <div class="swiper-slide">Slide 4</div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
     </div>
     <div class="Online-appointment">
       <ul class="Online-appointment--text">
@@ -173,46 +181,57 @@
             </div>
           </div>
         </div>
-      <div class="retings">
-        <div class="retings__text">Мы в рейтингах</div>
-        <div><img src="./imgs/2гис.png" alt="2gis"></div>
-        <div><img src="./imgs/Яндекс.png" alt=""></div>
-        <div><img src="./imgs/Продокторов.png" alt=""></div>
-        <div><img src="./imgs/Гугл.png" alt=""></div>
-      </div>
-      <div class="basement">
-        <ul class="basement__text--all">
-          <ul class="basement__text">
-            <li>Главная</li>
-            <li>О клинике</li>
-            <li>Услуги</li>
-            <li>Специалисты</li>
-            <li>Цены</li>
-          </ul>
-          <ul class="basement__text2">
-            <li>Отзывы</li>
-            <li>Вопросы и ответы</li>
-            <li>Контакты</li>
-            <li></li>
-            <li></li>
-            <li>+7-302-277-77-45</li>
-          </ul>
-        </ul>
-        <ul class="basement__info">
-          <ul class="basement__info">
-            <li>Ежедневно<br>09:00 – 21:00</li>
-          </ul>
-          <ul class="basement__info2">
-            <li><img src="./imgs/SocialNet.svg" alt=""></li>
-          </ul>
-        </ul>
-        <div class="basement__bottom">
-          <ul class="basement__bottom--list">
-            <li class="basement__bottom--text-1">Лицензия N 0000 0000</li>
-            <li class="basement__bottom--text-2">Политики конфиденциальности</li>
-          </ul>
-        </div>
-      </div>
+      </ul>
+    </div>  
+  <div class="retings">
+    <div class="retings__text">Мы в рейтингах</div>
+    <div><img src="./imgs/2гис.png" alt="2gis"></div>
+    <div><img src="./imgs/Яндекс.png" alt=""></div>
+    <div><img src="./imgs/Продокторов.png" alt=""></div>
+    <div><img src="./imgs/Гугл.png" alt=""></div>
+  </div>
+  <div class="basement">
+  <ul class="basement__text--all">
+    <ul class="basement__text">
+        <li>Главная</li>
+        <li>О клинике</li>
+        <li>Услуги</li>
+        <li>Специалисты</li>
+        <li>Цены</li>
+    </ul>
+    <ul class="basement__text2">
+        <li>Отзывы</li>
+        <li>Вопросы и ответы</li>
+        <li>Контакты</li>
+        <li></li>
+        <li></li>
+        <li class="basement__text3">+7-302-277-77-45</li>
+    </ul>
+    <ul class="basement__addresses">
+        <li>Новосибирск, ул. Сакко и Ванцетти 77</li>
+        <li>ул. Крылова 63</li>
+        <li>ул. Степная 6</li>
+        <li>Кемерово, ул. Тухачевского, 19А</li>
+    </ul>
+  </ul>
+
+  <ul class="basement__info">
+    <li>Ежедневно 09:00 – 21:00</li>
+  </ul>
+  <ul>
+  <li class="basement__info3">+7-302-277-77-45</li>
+  </ul>
+  <ul class="basement__info2">
+    <li><img src="./imgs/SocialNet.svg" alt=""></li>
+  </ul>
+  <div class="basement__bottom">
+    <ul class="basement__bottom--list">
+        <li class="basement__bottom--text-1">Лицензия N 0000 0000</li>
+        <li class="basement__bottom--text-2">Политики конфиденциальности</li>
+    </ul>
+  </div>
+    </div>
+
     </div>
   </div >
   </body>
@@ -220,5 +239,8 @@
   <script>
     var swiper = new Swiper(".mySwiper", {});
   </script>
-  <script src="./Style.js"> </script>
+  <script src="./JS_for_site/F.js"> </script>
+  <script src="./JS_for_site/Style.js"></script>
+  <script src="./JS_for_site/script.js"></script>
+  <script src="./JS_for_site/Swiper.js"></script>
 </html>

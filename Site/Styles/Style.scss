@@ -2,18 +2,30 @@
 
 @import "./Slider.scss";
 
-.account_login__menu{
+
+.account_login__menu {
   display: none;
-}
-.account_login__menu--opened{
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0s 0.3s;
   position: fixed;
-  box-shadow: 0px 0px 0px 100vw rgba(215, 215, 215, 0.68);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 0px 0px 100vw rgba(215, 215, 215, 0.68); 
   width: 320px;
   height: 258px;
   z-index: 99;
-  margin-top: 50px;
+  margin-left: 0 auto;
   border: #B8B8B8 solid 1px;
   background: linear-gradient(90deg, rgb(160, 212, 255), rgb(255, 255, 255));
+}
+
+.account_login__menu--opened{
+  display: block;
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease, visibility 0s;
 }
 .account_login__rect{
   display: flex;
@@ -243,7 +255,8 @@
 .context_menu--opened{
   display: flex;
   position: absolute;
-  margin: 50px 0 0 170px;
+  margin-top: 50px;
+  right: 35px;
   background-color: white;
   z-index: 2;
   width: 117px;
@@ -278,6 +291,9 @@
 .context_menu_exit{
   display: flex;
   align-items: center;
+  border: none;
+  background: none;
+  padding: 0;
 }
 .context_menu--img{
   width: 13px;
@@ -286,6 +302,8 @@
 .header__logo {
   display: flex;
   margin-left: 11px;
+  width: 114px;
+  height: 39px;
 }
 .header__account--conteiner {
   display: flex;
@@ -320,6 +338,7 @@
   font-size: 10px;
   font-family: "Abel";
   color: #00A3FF;
+  
 }
 .header__online_appointment {
   width: 124px;
@@ -331,6 +350,12 @@
   font-size: 10px;
   color: white;
   margin-left: 10px;
+  @media (min-width: $tablet-width) {
+    margin-left: 30px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-left: 60px;
+  }
 }
 .header__img--logos{
     width: 32px;
@@ -344,6 +369,12 @@
   font-size: 10px;
   width: 160px;
   margin: 0 10px 0 0;
+  @media (min-width: $tablet-width) {
+    margin-right: 30px;
+  }
+  @media (min-width: $desktop-width) {
+    margin-right: 60px;
+  }
 }
 
 .Doctor-info{
@@ -356,28 +387,46 @@
   background: linear-gradient(180deg, rgb(12, 70, 156), rgb(59, 194, 121));
   width: 100%;
   height: 535px;
+  @media (min-width: $desktop-width) {
+      height:525px;
+  }
 }
 .Online-appointment--text{
   padding: 31px 0 0 19px;
+  max-width: 296px;
   color: white;
   list-style: none;
   display: flex;
   flex-direction: column;
   row-gap: 29px;
   margin-top: 0;
+  @media (min-width: $tablet-width) {
+    max-width: 548px;
+    max-height: 339px;
+  }
+  @media (min-width:$desktop-width) {
+    max-width: 520px;
+    max-height: 325px;
+    font-size: 20px;
+  }
 }
 .Online-appointment--text1{
   font-size: 24px;
+  @media (min-width: $desktop-width) {
+    font-size: 36px;
+    width: 279px;
+  }
 }
 .Make_an_appointment{
-background-color: white;
-display: flex;
-width: 293px;
-height: 192px;
-margin-left: 19px;
-border-radius: 20px;
-justify-content: center;
-align-items: center;
+  background-color: white;
+  display: flex;
+  width: 293px;
+  height: 192px;
+  margin: 0 auto;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  
 }
 .Make_an_appointment--rectangle{
 background-color: white;
@@ -489,34 +538,144 @@ box-shadow: 0px 2px 10px 0px rgba(78, 127, 222, 0.2);
   font-size: 7px;
   margin-top: 11px;
 }
-.retings{
+@media (min-width: 768px) {
+  .Online-appointment--text {
+    max-width: 548px;
+    max-height: auto;
+    @media (min-width: 1024px) {
+      max-width: 548px;
+      max-height: 339px;
+    }
+  }
+  .Make_an_appointment {
+    width: 420px;
+    height: 280px;
+    margin: 0 auto;
+    @media (min-width: 1024px) {
+      position: absolute;
+      margin-top: -319px;
+      margin-left: 590px;
+  }
+  }
+
+  .Make_an_appointment--rectangle {
+    width: 400px;
+    height: 270px;
+  }
+
+  .name_and_phone {
+    width: 330px;
+  }
+
+  .name, .Phone, .service, .date {
+    width: 150px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .button--sign_up {
+    width: 150px;
+    height: 30px;
+    font-size: 12px;
+  }
+
+  .Appointment {
+    font-size: 18px;
+  }
+
+  .Agreement {
+    font-size: 10px;
+  }
+
+  .data_and_button {
+    width: 330px;
+  }
+}
+@media (min-width: 1024px) {
+    .Online-appointment{
+    max-width: 100%;
+    max-height: 349px;
+  }
+}
+.retings {
   font-size: 30px;
   font-family: "Abhaya Libre";
   display: flex;
   flex-direction: column;
   row-gap: 14px;
-  margin-top: 45px;
+  margin-top: 55px;
   width: 100%;
   height: 425px;
   align-items: center;
   justify-content: center;
 }
-.retings__text{
-  padding: 0 0 20px 0 ;
+
+.retings__text {
+  padding: 0 0 20px 0;
 }
-.basement{
+
+@media (min-width: 768px) {
+  .retings {
+    font-size: 30px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-gap: 26px; 
+    margin: 62px auto; 
+    width: 664px;
+    height: 242px;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .retings__text {
+    grid-column: span 2;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+}
+@media (min-width: 1024px) {
+  .retings {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+    margin: 80px auto;
+  }
+
+  .retings__text {
+    position: absolute;
+    top: 800px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 20px;
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+
+.basement {
   width: 100%;
-  height: 279px;
+  height: auto;
   background: linear-gradient(180deg, rgb(59, 125, 185), rgb(20, 108, 98));
+  position: relative;
 }
-.basement__text--all{
+
+.basement__text--all {
   display: flex;
   flex-direction: row;
   width: 100%;
   height: auto;
-  padding: 0%;
+  padding: 0;
+  gap: 35px;
 }
-.basement__text{
+
+.basement__text,
+.basement__text2,
+.basement__addresses {
   display: flex;
   color: white;
   flex-direction: column;
@@ -524,68 +683,69 @@ box-shadow: 0px 2px 10px 0px rgba(78, 127, 222, 0.2);
   font-size: 15px;
   font-family: "Abel";
   list-style: none;
-  padding: 0%;
+  padding: 0;
   padding-top: 15px;
+}
+
+.basement__text {
   padding-left: 23px;
 }
-.basement__text2{
+
+.basement__text2 {
+  padding-left: 20px;
+}
+
+.basement__addresses {
+  padding-left: 23px;
+}
+
+.basement__info,
+.basement__info2 {
   display: flex;
   color: white;
   flex-direction: column;
-  row-gap: 15px;
+  row-gap: 5px;
   font-size: 15px;
   font-family: "Abel";
   list-style: none;
-  padding: 0%;
-  padding-top: 15px;
-  padding-left: 20px;
-}
-.basement__info{
-  display: flex;
-  color: white;
-  flex-direction: row;
-  row-gap: 15px;
-  font-size: 15px;
-  font-family: "Abel";
-  list-style: none;
-  padding: 0%;
+  padding: 0;
   padding-left: 11px;
   padding-top: 3px;
   line-height: 24px;
 }
-.basement__info2{
-  display: flex;
-  color: white;
-  flex-direction: row;
-  row-gap: 15px;
-  font-size: 15px;
-  font-family: "Abel";
-  list-style: none;
-  padding: 0%;
+
+.basement__info2 {
   padding-left: 20px;
   padding-top: 15px;
 }
-.basement__bottom{
+
+.basement__info {
+  width: 173px;
+  height: auto;
+}
+
+.basement__bottom {
   display: flex;
   width: 100%;
   height: 25px;
   background-color: rgba($color: #1B1D32, $alpha: 0.26);
   flex-direction: row;
   padding: 0;
-  margin: 0%;
+  margin: 0;
 }
-.basement__bottom--list{
+
+.basement__bottom--list {
   display: flex;
   width: 100%;
   height: 25px;
   flex-direction: row;
   padding: 0;
-  margin: 0%;
+  margin: 0;
   justify-content: space-between;
   align-items: center;
-  
 }
-.basement__bottom--text-1{
+
+.basement__bottom--text-1 {
   display: flex;
   list-style: none;
   color: rgba($color: #fff, $alpha: 0.7);
@@ -593,7 +753,8 @@ box-shadow: 0px 2px 10px 0px rgba(78, 127, 222, 0.2);
   height: auto;
   margin: 0 15px 0 5px;
 }
-.basement__bottom--text-2{
+
+.basement__bottom--text-2 {
   display: flex;
   list-style: none;
   color: rgba($color: #fff, $alpha: 1);
@@ -601,4 +762,88 @@ box-shadow: 0px 2px 10px 0px rgba(78, 127, 222, 0.2);
   height: auto;
   text-decoration: underline;
   margin: 0 5px 0 5px;
+}
+.basement__info3{
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .basement__text--all {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+  }
+
+  .basement {
+    height: auto;
+  }
+
+  .basement__text,
+  .basement__text2,
+  .basement__addresses {
+    padding-left: 0;
+    width: auto;
+  }
+  .basement__text{
+    margin-left: 45px;
+  }
+  .basement__text3{
+    display: none;
+  }
+
+  .basement__addresses {
+    display: flex;
+    order: 3;
+  }
+  .basement__info3 {
+  display: flex;
+  color: white;
+  flex-direction: column;
+  font-size: 15px;
+  font-family: "Abel";
+
+}
+
+  .basement__info,
+  .basement__info2,
+  .basement__info3 {
+    position: absolute;
+    top: 15px;
+    flex-direction: column;
+    row-gap: 10px;
+    width: auto;
+    height: auto;
+    margin-top: 0;
+  }
+
+  .basement__info {
+    width: 173px;
+    height: auto;
+    right: 22px;
+  }
+
+  .basement__info2 {
+    margin-top: 65px;
+    right: 42px;
+  }
+  .basement__info3{
+    display: inline;
+    right: 86px;
+    padding-top: 30px;
+  }
+
+  .basement__text2 li:last-child {
+    margin-top: 5px;
+    order: 2;
+  }
+
+  .basement__bottom {
+    margin-top: 60px;
+  }
+}
+
+@media (max-width: 767px) {
+  .basement__addresses {
+    display: none;
+  }
 }

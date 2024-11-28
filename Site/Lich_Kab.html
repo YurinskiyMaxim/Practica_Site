@@ -1,12 +1,90 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <p>Hellow World</p>
-</body>
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="Styles/Style.scss">
+    <link rel="stylesheet" href="./node_modules/normalize.css/normalize.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practica site</title>
+  </head>
+  <body>
+    <div class="head__conteiner">
+      <div class="head__Lupa"> <img src="./imgs/Lupa.svg" alt="Lupa"> </div>
+      <div class="head__search"> <div class="head__search_2"></div></div>
+    </div>
+    <div class="header">
+      <div class="header__rectangle">
+        <div class="context_menu">
+          <ul class="context_menu--list">
+            <li><button class="context_menu--button"><img class="context_menu--img" src="./imgs/ЛичныйКаб.png" alt=""> Личный кабинет</button> </li>
+            <li class="context_menu--element"><img class="context_menu--img" src="./imgs/Список.png" alt=""> Список заявок</li>
+            <li><button class="context_menu--button"><img class="context_menu--img" src="./imgs/Поддержка.png" alt=""> Служба поддержки</button></li>
+            <button class="context_menu_exit"><img class="context_menu--img" src="./imgs/Выход.png" alt=""> Выйти из аккаунта</button>
+          </ul>
+        </div>
+        <div class="header__logo"> <img src="./imgs/Logo.svg" alt="Logo"></div>
+        <div class="header__account--conteiner">My account<button  class="header__account--button"><img src="./imgs/Accaunt.svg" alt=""></button></div>
+    </div>
+    </div>
+      <div class="header__zapis--conteiner">
+        <div class="header__socnet">
+          <div>+7-302-277-77-45</div>
+          <div><img  class="header__img--logos" src="./imgs/Telegram.svg" alt=""></div>
+          <div><img  class="header__img--logos" src="./imgs/whatsapp.svg" alt=""></div>
+        </div>
+      </div>
+    </div>
+      <div class="basement">
+    <ul class="basement__text--all">
+        <ul class="basement__text">
+            <li>Главная</li>
+            <li>О клинике</li>
+            <li>Услуги</li>
+            <li>Специалисты</li>
+            <li>Цены</li>
+        </ul>
+        <ul class="basement__text2">
+            <li>Отзывы</li>
+            <li>Вопросы и ответы</li>
+            <li>Контакты</li>
+            <li></li>
+            <li></li>
+            <li class="basement__text3">+7-302-277-77-45</li>
+        </ul>
+        <ul class="basement__addresses">
+            <li>Новосибирск, ул. Сакко и Ванцетти 77</li>
+            <li>ул. Крылова 63</li>
+            <li>ул. Степная 6</li>
+            <li>Кемерово, ул. Тухачевского, 19А</li>
+        </ul>
+    </ul>
+
+    <ul class="basement__info">
+        <li>Ежедневно 09:00 – 21:00</li>
+    </ul>
+    <ul>
+      <li class="basement__info3">+7-302-277-77-45</li>
+    </ul>
+    <ul class="basement__info2">
+        <li><img src="./imgs/SocialNet.svg" alt=""></li>
+    </ul>
+    <div class="basement__bottom">
+        <ul class="basement__bottom--list">
+            <li class="basement__bottom--text-1">Лицензия N 0000 0000</li>
+            <li class="basement__bottom--text-2">Политики конфиденциальности</li>
+        </ul>
+    </div>
+</div>
+
+    </div>
+  </div >
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {});
+  </script>
+  <script src="./Style.js"> </script>
+  <script src="./F.js"> </script>
+  <script src="./script.js"></script>
 </html>
