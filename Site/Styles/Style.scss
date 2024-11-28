@@ -2,6 +2,193 @@
 
 @import "./Slider.scss";
 
+.account_login__menu{
+  display: none;
+}
+.account_login__menu--opened{
+  position: fixed;
+  box-shadow: 0px 0px 0px 100vw rgba(215, 215, 215, 0.68);
+  width: 320px;
+  height: 258px;
+  z-index: 99;
+  margin-top: 50px;
+  border: #B8B8B8 solid 1px;
+  background: linear-gradient(90deg, rgb(160, 212, 255), rgb(255, 255, 255));
+}
+.account_login__rect{
+  display: flex;
+  width: 160px;
+  height: 36px;
+  background: none;
+  border: #B8B8B8 solid 1px;
+  margin: -1px;
+  border-radius:0 0 12px 12px;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-family: "Abel";
+  color: rgba($color: #000000, $alpha: 0.68);
+}
+.account_login__rect2{
+  display: flex;
+  width: 159px;
+  height: 36px;
+  background: none;
+  border: #B8B8B8 solid 1px;
+  margin:-38px 0 0 160px;
+  border-radius:0 0 12px 12px;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-family: "Abel";
+  color: rgba($color: #000000, $alpha: 0.68);
+}
+.input_field{
+  display: flex;
+  background: white;
+  border: rgba($color: #000000, $alpha: 0.26) solid 1px;
+  border-radius: 3px;
+  width: 93px;
+  height: 23px;
+  font-size: 8px;
+  font-family: "Abel";
+  color: rgba($color: #000000, $alpha: 0.63);
+  align-items: center;
+  padding-left: 5px;
+  margin: 14px 0 0 17px ;
+}
+.input__botton{
+  display: flex;
+  color: white;
+  font-size: 10px;
+  font-family: "Abel";
+  background: linear-gradient(90deg, rgb(51, 255, 33), rgb(59, 128, 192));
+  width: 93px;
+  height: 23px;
+  margin: 9px 0 0 17px;
+  border-radius: 5px;
+  border: rgba($color: #000000, $alpha: 0.17) solid 1px;
+  align-items: center;
+  justify-content: center;
+}
+.seporation{
+  position: absolute;
+  height: 56px;
+  width: 1px;
+  background: #B8B8B8;
+  margin: -119px 0 0 160px;
+}
+.seporation--text{
+  font-size: 7px;
+  font-family: "Abel";
+  margin-left: 155px;
+  margin-top: -60px;
+  width: 14px;
+  height: 8px;
+}
+.seporation2{
+  position: absolute;
+  height: 56px;
+  width: 1px;
+  background: #B8B8B8;
+  margin-left: 160px;
+  margin-top: 1px;
+}
+.account_login__rect--registr{
+  display: flex;
+  background: white;
+  border: rgba($color: #000000, $alpha: 0.26) solid 1px;
+  border-radius: 3px;
+  width: 93px;
+  height: 17px;
+  font-size: 8px;
+  font-family: "Abel";
+  color: rgba($color: #000000, $alpha: 0.63);
+  align-items: center;
+  padding-left: 5px;
+  margin: -44px 0 0 194px ;
+}
+.account_login__rect--registr2{
+  display: flex;
+  background: white;
+  border: rgba($color: #000000, $alpha: 0.26) solid 1px;
+  border-radius: 3px;
+  width: 93px;
+  height: 17px;
+  font-size: 8px;
+  font-family: "Abel";
+  color: rgba($color: #000000, $alpha: 0.63);
+  align-items: center;
+  padding-left: 5px;
+  margin: 4px 0 0 194px ;
+}
+.account_login__rect--registr3{
+  display: flex;
+  background: white;
+  border: rgba($color: #000000, $alpha: 0.26) solid 1px;
+  border-radius: 3px;
+  width: 93px;
+  height: 17px;
+  font-size: 8px;
+  font-family: "Abel";
+  color: rgba($color: #000000, $alpha: 0.63);
+  align-items: center;
+  padding-left: 5px;
+  margin: 4px 0 0 194px ;
+}
+.account_login__bottom--registr{
+  display: flex;
+  color: white;
+  font-size: 10px;
+  font-family: "Abel";
+  background: linear-gradient(90deg, rgb(51, 255, 33), rgb(59, 128, 192));
+  max-width: 93px;
+  max-height: 23px;
+  width: 93px;
+  height: 23px;
+  margin: 7px 0 0 194px;
+  border-radius: 5px;
+  border: rgba($color: #000000, $alpha: 0.17) solid 1px;
+  align-items: center;
+  justify-content: center;
+}
+.account-registr__check_mark{
+  display: flex;
+  margin: 18px 0 0 24px;
+}
+.account-registr__check_mark{
+  width: 10px;
+  height: 10px;
+}
+.account-registr__check_mark--text{
+  display: block;
+  width: 266px;
+  height: auto;
+  font-size: 7px;
+  font-family: "Abel";
+  color: black;
+  margin-left: 39px;
+  margin-top: -10px;
+}
+.account__seporation{
+  display: flex;
+  width: 320px;
+  height: 1px;
+  background-color: rgba($color: #000000, $alpha: 0.26);
+  margin-top: 8px;
+}
+.gosUslugi__login{
+  display: flex;
+  width: 169px;
+  height: 36px;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  border: solid 1px;
+  border-color: rgba($color: #000000, $alpha: 0.26);
+  border-radius: 3px;
+  margin:11px 0 0 76px;
+}
 .head__conteiner {
   display: flex;
   background: #f1f3f7;
@@ -49,6 +236,52 @@
   box-shadow: 0px 0px 15px 0px rgba(34, 60, 80, 0.2);
   justify-content: space-between;
   align-items: center;
+}
+.context_menu{
+  display: none;
+}
+.context_menu--opened{
+  display: flex;
+  position: absolute;
+  margin: 50px 0 0 170px;
+  background-color: white;
+  z-index: 2;
+  width: 117px;
+  height: 88px;
+  border-radius: 5px;
+  border: 1px solid;
+  border-color: rgba($color: #000000, $alpha: 0.3);
+}
+.context_menu--button{
+  display: flex;
+  border: none;
+  background: none;
+  padding: 0;
+  align-items: center;
+}
+.context_menu--list{
+  display: flex;
+  list-style: none;
+  flex-direction: column;
+  margin: 0;
+  font-size: 10px;
+  width: auto;
+  height: 82px;
+  row-gap: 7px;
+  padding: 3px;
+  font-family: "Abel";
+}
+.context_menu--element{
+  display: flex;
+  align-items: center;
+}
+.context_menu_exit{
+  display: flex;
+  align-items: center;
+}
+.context_menu--img{
+  width: 13px;
+  height: auto;
 }
 .header__logo {
   display: flex;
